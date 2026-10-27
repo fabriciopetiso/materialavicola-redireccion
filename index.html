@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La cartilla se mudó a materialavicola.cto.ar</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://materialavicola.cto.ar/">
+<script>
+  // Lleva a la misma página en la dirección nueva, conservando ruta, consulta y
+  // ancla (por ejemplo /taller/ o /#cap4). El mismo archivo sirve como 404.html,
+  // así que también cubre los enlaces directos a archivos y subpáginas.
+  (function () {
+    var ruta = location.pathname;
+    // Mientras el repo se sirve sin dominio propio, la ruta empieza con su nombre.
+    var prefijo = '/materialavicola-redireccion';
+    if (ruta.indexOf(prefijo) === 0) ruta = ruta.slice(prefijo.length) || '/';
+    location.replace('https://materialavicola.cto.ar' + ruta + location.search + location.hash);
+  })();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://materialavicola.cto.ar/"></noscript>
+<style>
+  body{font-family:system-ui,sans-serif;background:#fdfaf2;color:#3f4437;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;padding:20px;text-align:center;font-size:18px;line-height:1.6}
+  a{color:#c05a32}
+</style>
+</head>
+<body>
+  <p>La cartilla de alimentación agroecológica se mudó a <a href="https://materialavicola.cto.ar/">materialavicola.cto.ar</a>.</p>
+</body>
+</html>
